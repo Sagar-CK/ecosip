@@ -127,7 +127,13 @@ export function EcosipLandingPage() {
   )
 }
 
-function FeatureCard({ icon, title, description }) {
+interface FeatureCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
     <div className="bg-blue-50 p-6 rounded-lg text-center">
       <div className="flex justify-center mb-4">{icon}</div>
@@ -137,7 +143,12 @@ function FeatureCard({ icon, title, description }) {
   )
 }
 
-function BenefitItem({ title, children }) {
+interface BenefitItemProps {
+  title: string;
+  children: React.ReactNode;
+}
+
+function BenefitItem({ title, children }: BenefitItemProps) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md">
       <h3 className="text-xl font-semibold mb-2 text-[#4c6c9a]">{title}</h3>
