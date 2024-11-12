@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { ArrowRight, Droplet, Building, Mail, Recycle, Users, BarChart, Award } from 'lucide-react'
+import { ArrowRight, Droplet, Building, Mail, Recycle, Users} from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
